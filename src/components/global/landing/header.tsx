@@ -43,7 +43,7 @@ export default function Header() {
 
         {/* CTA */}
         <Link
-          href='#contact'
+          href='/login'
           className='inline-flex items-center gap-2 rounded-md px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 transition shadow-sm'
         >
           <span>Войти в платформу</span>
