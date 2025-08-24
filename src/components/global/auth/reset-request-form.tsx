@@ -31,7 +31,7 @@ export function ResetRequestForm() {
           name='email'
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email</FormLabel>
+              <FormLabel>Электронная почта</FormLabel>
               <FormControl>
                 <Input type='email' placeholder='you@example.com' {...field} />
               </FormControl>
@@ -40,7 +40,7 @@ export function ResetRequestForm() {
           )}
         />
         <Button className='w-full' type='submit'>
-          Send reset link
+          Отправить ссылку для сброса
         </Button>
       </form>
     </Form>

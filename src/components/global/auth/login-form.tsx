@@ -39,7 +39,7 @@ export default function LoginForm() {
     <div className='space-y-4'>
       <OAuthButtons />
       <div className='relative my-2 text-center'>
-        <span className='px-2 text-xs text-muted-foreground bg-background relative z-10'>or</span>
+        <span className='px-2 text-xs text-muted-foreground bg-background relative z-10'>или</span>
         <div className='absolute left-0 right-0 top-1/2 -translate-y-1/2 h-px bg-border' />
       </div>
 
@@ -50,7 +50,7 @@ export default function LoginForm() {
             name='email'
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Email</FormLabel>
+                <FormLabel>Электронная почта</FormLabel>
                 <FormControl>
                   <Input
                     type='email'
@@ -69,7 +69,7 @@ export default function LoginForm() {
             name='password'
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Password</FormLabel>
+                <FormLabel>Пароль</FormLabel>
                 <FormControl>
                   <Input
                     type='password'
@@ -92,17 +92,17 @@ export default function LoginForm() {
                   <FormControl>
                     <Checkbox checked={field.value} onCheckedChange={field.onChange} />
                   </FormControl>
-                  <FormLabel className='font-normal'>Remember me</FormLabel>
+                  <FormLabel className='font-normal'>Запомнить меня</FormLabel>
                 </FormItem>
               )}
             />
             <a href='/reset-password' className='text-sm underline'>
-              Forgot password?
+              Забыли пароль?
             </a>
           </div>
 
           <Button type='submit' className='w-full' disabled={loading}>
-            Sign in
+            Войти
           </Button>
         </form>
       </Form>

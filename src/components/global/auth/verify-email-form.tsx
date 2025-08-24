@@ -53,8 +53,8 @@ export default function VerifyEmailForm({ email }: { email: string }) {
   return (
     <div>
       <p className='text-sm text-muted-foreground mb-4'>
-        We sent a 6‑digit code to <span className='font-medium'>{email}</span>. Enter it below to
-        verify your email.
+        Мы отправили 6-значный код на <span className='font-medium'>{email}</span>. Введите его
+        ниже, чтобы подтвердить свой адрес электронной почты.
       </p>
 
       <Form {...form}>
@@ -64,7 +64,7 @@ export default function VerifyEmailForm({ email }: { email: string }) {
             name='code'
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Verification code</FormLabel>
+                <FormLabel>Проверочный код</FormLabel>
                 <FormControl>
                   <Input inputMode='numeric' maxLength={6} placeholder='123456' {...field} />
                 </FormControl>
@@ -74,17 +74,17 @@ export default function VerifyEmailForm({ email }: { email: string }) {
           />
 
           <Button type='submit' className='w-full' disabled={loading}>
-            Verify email
+            Подтвердить адрес электронной почты
           </Button>
         </form>
       </Form>
 
       <div className='mt-4 flex items-center justify-between text-sm'>
         <span className='text-muted-foreground'>
-          Didn't get the code? {sent && seconds > 0 && <span>Resend in {seconds}s</span>}
+          Не получили код? {sent && seconds > 0 && <span>Отправить повторно {seconds}s</span>}
         </span>
         <button onClick={resend} className='underline disabled:opacity-50' disabled={seconds > 0}>
-          Resend code
+          Отправить код повторно
         </button>
       </div>
     </div>

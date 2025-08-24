@@ -16,7 +16,7 @@ export default function OAuthButtons() {
   };
   return (
     <Button variant='outline' className='w-full' onClick={click} disabled={oauthLoading}>
-      <Icons.google className='mr-2 h-4 w-4' /> Continue with Google
+      <Icons.google className='mr-2 h-4 w-4' /> Продолжить с Google
     </Button>
   );
 }

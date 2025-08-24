@@ -35,7 +35,7 @@ export function ResetConfirmForm({ token }: { token: string }) {
           name='password'
           render={({ field }) => (
             <FormItem>
-              <FormLabel>New password</FormLabel>
+              <FormLabel>Новый пароль</FormLabel>
               <FormControl>
                 <Input type='password' placeholder='••••••••' {...field} />
               </FormControl>
@@ -49,7 +49,7 @@ export function ResetConfirmForm({ token }: { token: string }) {
           name='confirm'
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Confirm password</FormLabel>
+              <FormLabel>Подтвердите пароль</FormLabel>
               <FormControl>
                 <Input type='password' placeholder='••••••••' {...field} />
               </FormControl>
@@ -58,7 +58,7 @@ export function ResetConfirmForm({ token }: { token: string }) {
           )}
         />
         <Button className='w-full' type='submit'>
-          Set new password
+          Установить новый пароль
         </Button>
       </form>
     </Form>

@@ -44,7 +44,7 @@ export default function RegisterForm() {
     <div className='space-y-4'>
       <OAuthButtons />
       <div className='relative my-2 text-center'>
-        <span className='px-2 text-xs text-muted-foreground bg-background relative z-10'>or</span>
+        <span className='px-2 text-xs text-muted-foreground bg-background relative z-10'>или</span>
         <div className='absolute left-0 right-0 top-1/2 -translate-y-1/2 h-px bg-border' />
       </div>
 
@@ -55,7 +55,7 @@ export default function RegisterForm() {
             name='name'
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Full name</FormLabel>
+                <FormLabel>Полное имя</FormLabel>
                 <FormControl>
                   <Input placeholder='Your name' {...field} />
                 </FormControl>
@@ -69,7 +69,7 @@ export default function RegisterForm() {
             name='email'
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Email</FormLabel>
+                <FormLabel>Электронная почта</FormLabel>
                 <FormControl>
                   <Input
                     type='email'
@@ -88,7 +88,7 @@ export default function RegisterForm() {
             name='password'
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Password</FormLabel>
+                <FormLabel>Пароль</FormLabel>
                 <FormControl>
                   <Input
                     type='password'
@@ -98,7 +98,7 @@ export default function RegisterForm() {
                   />
                 </FormControl>
                 <PasswordStrength value={pwd} />
-                <FormDescription>Use 8+ chars with letters & numbers</FormDescription>
+                <FormDescription>Используйте 8+ символов с буквами и цифрами.</FormDescription>
                 <FormMessage />
               </FormItem>
             )}
@@ -109,7 +109,7 @@ export default function RegisterForm() {
             name='confirm'
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Confirm password</FormLabel>
+                <FormLabel>Подтвердите пароль</FormLabel>
                 <FormControl>
                   <Input
                     type='password'
@@ -133,9 +133,9 @@ export default function RegisterForm() {
                 </FormControl>
                 <div className='leading-none'>
                   <FormLabel className='font-normal'>
-                    I agree to the{' '}
+                    Я согласен с{' '}
                     <a className='underline' href='/terms'>
-                      Terms
+                      Условия
                     </a>
                   </FormLabel>
                 </div>
@@ -145,7 +145,7 @@ export default function RegisterForm() {
           />
 
           <Button type='submit' className='w-full' disabled={loading}>
-            Create account
+            Зарегистрироваться
           </Button>
         </form>
       </Form>
