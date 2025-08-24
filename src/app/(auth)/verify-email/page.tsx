@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import VerifyEmailForm from '../../../components/global/auth/verify-email-form';
 
 export default function VerifyEmailPage({ searchParams }: { searchParams: { email?: string } }) {
@@ -10,9 +11,9 @@ export default function VerifyEmailPage({ searchParams }: { searchParams: { emai
         <VerifyEmailForm email={email} />
         <p className='mt-6 text-center text-sm text-muted-foreground'>
           Не тот адрес электронной почты?{' '}
-          <a className='underline' href='/register'>
+          <Link className='underline' href='/register'>
             Возвращаться
-          </a>
+          </Link>
         </p>
       </div>
     </div>

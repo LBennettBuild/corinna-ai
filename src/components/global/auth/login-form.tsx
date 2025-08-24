@@ -15,6 +15,7 @@ import {
   FormMessage,
 } from '@/components/ui/form';
 import OAuthButtons from './OAuth-buttons';
+import Link from 'next/link';
 
 export default function LoginForm() {
   const form = useForm<LoginInput>({
@@ -96,9 +97,9 @@ export default function LoginForm() {
                 </FormItem>
               )}
             />
-            <a href='/reset-password' className='text-sm underline'>
+            <Link href='/reset-password' className='text-sm underline'>
               Забыли пароль?
-            </a>
+            </Link>
           </div>
 
           <Button type='submit' className='w-full' disabled={loading}>

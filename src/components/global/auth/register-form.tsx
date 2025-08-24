@@ -17,6 +17,7 @@ import {
 } from '@/components/ui/form';
 import OAuthButtons from './OAuth-buttons';
 import PasswordStrength from './password-strength';
+import Link from 'next/link';
 
 export default function RegisterForm() {
   const form = useForm<RegisterInput>({
@@ -134,9 +135,9 @@ export default function RegisterForm() {
                 <div className='leading-none'>
                   <FormLabel className='font-normal'>
                     Я согласен с{' '}
-                    <a className='underline' href='/terms'>
+                    <Link className='underline' href='/terms'>
                       Условия
-                    </a>
+                    </Link>
                   </FormLabel>
                 </div>
                 <FormMessage />

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { ResetRequestForm } from '../../../components/global/auth/reset-request-form';
 
 export default function ResetPasswordRequestPage() {
@@ -11,9 +12,9 @@ export default function ResetPasswordRequestPage() {
         <ResetRequestForm />
         <p className='mt-6 text-center text-sm text-muted-foreground'>
           Помните это?{' '}
-          <a href='/login' className='underline'>
+          <Link href='/login' className='underline'>
             Вернуться к входу
-          </a>
+          </Link>
         </p>
       </div>
     </div>

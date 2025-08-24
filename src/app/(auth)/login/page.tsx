@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import LoginForm from '../../../components/global/auth/login-form';
 
 export default function LoginPage() {
@@ -9,9 +10,9 @@ export default function LoginPage() {
         <LoginForm />
         <p className='mt-6 text-center text-sm text-muted-foreground'>
           Впервые здесь?{' '}
-          <a className='underline' href='/register'>
+          <Link className='underline' href='/register'>
             Создайте свой аккаунт
-          </a>
+          </Link>
         </p>
       </div>
     </div>
